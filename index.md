@@ -2,8 +2,6 @@
 
 如果也想尝试，先建立一个pages仓库，参照我的[仓库](https://github.com/zzcoop/zzcoop.github.io)把_config.yml index.md修改。
 
-[jxcoop](note/jxcoop/index.md)
-
-[JAVA](note/JAVA/index.md)
+# [JAVA](note/JAVA/index.md)
 
 联系方式 olog@qq.com
