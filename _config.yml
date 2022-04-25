@@ -12,6 +12,6 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
-title: 笔记
+title: 周周丶周而复始
 theme: jekyll-theme-cayman
-description: 这是用来存放个人笔记的网站
+description: 个人笔记
