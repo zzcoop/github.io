@@ -6,7 +6,7 @@
 
 # [城乡流通直报系统](note/城乡流通直报系统.md)
 
-# [软件架构体系](note/软件架构体系.md)
+# [供销集配架构体系思路](note/JAVA/供销集配体系架构.md)
 
 # [JAVA](note/JAVA/index.md)
 
