@@ -9,6 +9,32 @@ $ vim /etc/default/locale
 #将编码方式改成UTF-8
  LANG=en_US.UTF-8
  LANGUAGE=zh_CN.UTF-8
+ 
+ 
+#------------------------------
+#安装UTF-8 语言支持包
+sudo locale-gen en_US.UTF-8
+
+sudo vim /etc/default/locale
+
+删除全部,添加如下
+
+LC_ALL="en_US.UTF-8"
+
+source /etc/default/locale
+
+或者
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+或者
+vim .profile
+加入
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+source .profile
 ```
 
 ##### 2、git命令显示乱码问题
