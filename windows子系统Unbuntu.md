@@ -66,3 +66,30 @@ git config --global credential.helper store
 
 ```
 
+
+
+## Debian
+
+##### 1、终端显示中文
+
+```shell
+#终端输入命令
+sudo dpkg-reconfigure locales
+#选择
+#zh_CN.UTF-8 UTF-8
+#默认locale还是选en_US.UF8  一般到这里就可以了
+
+#选择好后自动加载中文环境：但是注意可能没有对应的字库，我们需要手动下载中文字库：
+
+apt --fix-broken install xfonts-intl-chinese xfonts-wqy -fy
+apt install ttf-wqy-zenhei -y  //这个是用来修复谷歌浏览器中文乱码问题	
+
+#@可以直接修改文件
+
+\etc\locale.gen  //此文件对需要的语言取消注释等同于上面选择zh_CN.UTF-8 UTF-8
+
+\etc\default\locale   //此处设置启动是想要的默认语言 eg:LANG=zh_CN.UTF-8
+
+locale-gen  //执行此命令，加载上面两部修改
+```
+
