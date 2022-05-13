@@ -12,7 +12,7 @@
 
 # [城乡流通直报系统](城乡流通直报系统.md)
 
-# [spring cloud security搭建过程](spring cloud security搭建过程.md)
+# [spring cloud security搭建过程](spring-cloud-security.md)
 
 # [WSL](windows子系统Unbuntu.md)
 
