@@ -127,3 +127,38 @@ V 改成你密码的长度
 这里输入你的密码
 ```
 
+## wls问题汇总
+
+##### 1、去掉 windows 的环境变量
+
+```shell
+# 1、在 wsl 下新建 /etc/wsl.conf 配置文件，并编辑如下内容：
+
+[interop]
+ appendWindowsPath = false
+ 
+# 2、在控制台执行以下命令，重启 wsl 即可： 
+wsl --terminate <distro>
+```
+
+
+
+##### 2、关闭WSL的提示音（或窗口抖动）
+
+```
+# 1. vim 打开配置文件
+sudo vim /etc/inputrc
+
+# 2. vim搜索 bell-style
+:/bell-style
+
+# 3. 取消下面展示的这一行的注释
+bell-style = none
+
+# 4. ctrl+d 退出 wsl 再重新进入
+
+# 5. Vim 设置
+set visualbell
+
+```
+
